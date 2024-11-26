@@ -1,0 +1,44 @@
+/* Fondo general de la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', 'Courier New', monospace; /* Fuente futurista */
+    color: #00ffe0; /* Cian brillante */
+    background: radial-gradient(circle, #1a1a1a, #0d0d0d); /* Fondo oscuro con un efecto sutil */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 3rem;
+    color: #ff00ff; /* Magenta brillante */
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff0099;
+    margin-bottom: 20px;
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 1.5rem;
+    color: #00ffff; /* Cian brillante */
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ccff;
+    margin-bottom: 20px;
+}
+
+/* Efecto de animación (opcional para los títulos) */
+@keyframes neon-glow {
+    0%, 100% {
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff0099;
+    }
+    50% {
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 50px #ff66cc;
+    }
+}
+
+h1 {
+    animation: neon-glow 2s infinite alternate;
+}
